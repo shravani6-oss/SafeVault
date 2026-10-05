@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeVault Dashboard</title>
+</head>
+<body>
+
+<h1>SafeVault Dashboard</h1>
+
+<h2>Welcome, {{ name }}!</h2>
+
+<p>Your role: {{ role }}</p>
+
+{% if role == "admin" %}
+    <p>
+        <a href="/admin">Go to Admin Panel</a>
+    </p>
+{% endif %}
+
+<p>
+    <a href="/logout">Logout</a>
+</p>
+
+</body>
+</html>
